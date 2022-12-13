@@ -3,10 +3,10 @@
     android:layout_width="250dp"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="15dp"
-    android:background="@drawable/card_comunity"
-    >
+    android:background="@drawable/card_comunity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -63,7 +63,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/card_imagehome"
+        tools:itemCount="3"
+        />
 
     <Button
         android:layout_marginTop="15dp"
