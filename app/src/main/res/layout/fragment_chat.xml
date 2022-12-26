@@ -4,26 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragment.HomeFragment">
+    tools:context=".fragment.ChatFragment">
 
     <LinearLayout
+        android:id="@+id/ll_chat"
         android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
         android:background="@color/black"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_Komunitas"
+            android:id="@+id/tv_chatcomunity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:text="Comunity"
+            android:text="Obrolan"
             android:textColor="@color/white"
             android:fontFamily="@font/dancingscript" />
 
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/card_chat"/>
 
 
 </LinearLayout>

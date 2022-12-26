@@ -12,7 +12,7 @@ public class DataCom {
             {"Harley", String.valueOf(R.drawable.harley)},
             {"Harley", String.valueOf(R.drawable.harley)},
             {"Harley", String.valueOf(R.drawable.harley)},
-            {"Harley", String.valueOf(R.drawable.harley)},
+            {"Harley", String.valueOf(R.drawable.harley )},
             {"Harley", String.valueOf(R.drawable.harley)},
             {"Harley", String.valueOf(R.drawable.harley)},
             {"Harley", String.valueOf(R.drawable.harley)},

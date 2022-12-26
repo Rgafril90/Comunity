@@ -7,14 +7,39 @@
     tools:context=".Activities.SplashScreenActivity"
     android:id="@+id/splash_screen">
 
+    <TextView
+        android:id="@+id/tv_Community"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Community"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/iv_ss"
+        android:textColor="@color/purple_700"
+        />
+
     <ImageView
+        android:id="@+id/iv_ss"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:backgroundTint="@color/purple_500"
         android:scaleType="centerCrop"
-        android:src="@drawable/harley_sposter"/>
+        android:src="@drawable/logobrt"/>
+
+    <TextView
+        android:id="@+id/tv_brt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ByRBT"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_ss"
+        android:textColor="@color/black"/>
+
 
 
 

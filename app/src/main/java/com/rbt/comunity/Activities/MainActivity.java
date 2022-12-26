@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.rbt.comunity.R;
+import com.rbt.comunity.fragment.ChatFragment;
 import com.rbt.comunity.fragment.HomeFragment;
 import com.rbt.comunity.fragment.SearchFragment;
 import com.rbt.comunity.fragment.UserFragment;
@@ -25,22 +26,28 @@ public class MainActivity extends AppCompatActivity {
 
         bnv = findViewById(R.id.bnv_main);
 
-        bnv.add(new MeowBottomNavigation.Model(1, R.drawable.search));
-        bnv.add(new MeowBottomNavigation.Model(2, R.drawable.home));
-        bnv.add(new MeowBottomNavigation.Model(3, R.drawable.user));
+        bnv.add(new MeowBottomNavigation.Model(1,R.drawable.chat));
+        bnv.add(new MeowBottomNavigation.Model(2, R.drawable.search));
+        bnv.add(new MeowBottomNavigation.Model(3, R.drawable.home));
+        bnv.add(new MeowBottomNavigation.Model(4, R.drawable.user));
+
+
 
         bnv.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
             public void onShowItem(MeowBottomNavigation.Model item) {
                 Fragment fragment = null;
                 switch (item.getId()) {
-                    case 1:
-                        fragment = new SearchFragment();
+                    case 1 :
+                        fragment = new ChatFragment();
                         break;
                     case 2:
-                        fragment = new HomeFragment();
+                        fragment = new SearchFragment();
                         break;
                     case 3:
+                        fragment = new HomeFragment();
+                        break;
+                    case 4:
                         fragment = new UserFragment();
                         break;
                 }
@@ -48,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 loadFragment(fragment);
             }
         });
-        bnv.show(2, true);
+        bnv.show(3, true);
         bnv.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
